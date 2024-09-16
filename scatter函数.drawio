@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.14">
+  <diagram name="第 1 页" id="P-KqnQGnXuje-niMfhZ2">
+    <mxGraphModel dx="1042" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-1" value="&lt;p style=&quot;line-height: 215%;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;scatter用于将某些值根据索引分布到目标张量的指定位置&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-2" value="&lt;h3 style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;code style=&quot;&quot;&gt;scatter&lt;/code&gt; 函数的关键参数：&lt;/font&gt;&lt;/h3&gt;&lt;ul style=&quot;font-size: 16px;&quot;&gt;&lt;li style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;code&gt;input&lt;/code&gt;&lt;/strong&gt;: 输入张量，表示要聚合的值。&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;code&gt;index&lt;/code&gt;&lt;/strong&gt;: 指定将 &lt;code&gt;input&lt;/code&gt; 中的元素分散到目标张量中的位置。&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;code&gt;dim&lt;/code&gt;&lt;/strong&gt;: 指定沿着哪个维度进行操作。&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;code&gt;dim_size&lt;/code&gt;&lt;/strong&gt;: 目标张量的大小。&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;strong style=&quot;&quot;&gt;&lt;code&gt;reduce&lt;/code&gt;&lt;/strong&gt;: 指定聚合操作的方式（如 &lt;code style=&quot;&quot;&gt;&#39;add&#39;&lt;/code&gt; 表示加法，&lt;code style=&quot;&quot;&gt;&#39;mean&#39;&lt;/code&gt; 表示平均，&lt;code style=&quot;&quot;&gt;&#39;max&#39;&lt;/code&gt; 表示取最大值等）。&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="560" height="190" as="geometry" />
+        </mxCell>
+        <UserObject label="import torch&#xa;from torch_scatter import scatter&#xa;&#xa;&#xa;# input 是需要聚合的值&#xa;input = torch.tensor([[1, 2], [3, 4], [5, 6], [7, 8]])&#xa;&#xa;&#xa;# index 是指定如何分散这些值&#xa;index = torch.tensor([0, 1, 0, 1])&#xa;&#xa;&#xa;# 聚合维度为 0，目标张量有 2 行（dim_size=2），聚合操作为 &#39;add&#39;&#xa;output = scatter(input, index, dim=0, dim_size=2, reduce=&#39;add&#39;)&#xa;# 在二维中 dim=0和dim=-2的效果是等价的&#xa;&#xa;print(output)" link="import torch&#xa;from torch_scatter import scatter&#xa;&#xa;&#xa;# input 是需要聚合的值&#xa;input = torch.tensor([[1, 2], [3, 4], [5, 6], [7, 8]])&#xa;&#xa;&#xa;# index 是指定如何分散这些值&#xa;index = torch.tensor([0, 1, 0, 1])&#xa;&#xa;&#xa;# 聚合维度为 0，目标张量有 2 行（dim_size=2），聚合操作为 &#39;add&#39;&#xa;output = scatter(input, index, dim=0, dim_size=2, reduce=&#39;add&#39;)&#xa;&#xa;&#xa;print(output)" id="_Tb0Xmj7mTu4rhi82HRp-3">
+          <mxCell style="text;whiteSpace=wrap;fontSize=15;" vertex="1" parent="1">
+            <mxGeometry x="50" y="240" width="500" height="340" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-4" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="600" width="50" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-5" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="600" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-6" value="2" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="600" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-7" value="3" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-8" value="4" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-9" value="5" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="660" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-10" value="6" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="660" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-11" value="7" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="690" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-12" value="8" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="690" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_Tb0Xmj7mTu4rhi82HRp-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-15" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="140" y="600" width="50" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-17" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;scatter&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-18" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="630" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-22" value="1+5" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-23" value="2+6" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-24" value="3+7" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="660" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-25" value="4+8" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="650" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_Tb0Xmj7mTu4rhi82HRp-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-26" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="470" y="630" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-28" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="630" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-29" value="6" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-30" value="8" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-31" value="10" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="660" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-32" value="12" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="650" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_Tb0Xmj7mTu4rhi82HRp-33" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="690" y="630" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
