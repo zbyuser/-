@@ -7,7 +7,7 @@
         <mxCell id="Vci0BR-BIrcoS8XzcBMn-169" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=0.5;" vertex="1" parent="1">
           <mxGeometry x="177.25" y="126" width="305" height="274" as="geometry" />
         </mxCell>
-        <mxCell id="RBk_R1gjDbcSzaGuoD_O-101" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=0.5;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+        <mxCell id="RBk_R1gjDbcSzaGuoD_O-101" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=0.5;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="260" y="300" width="220" height="93.12" as="geometry" />
         </mxCell>
         <mxCell id="Vci0BR-BIrcoS8XzcBMn-40" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
@@ -19,7 +19,7 @@
         <mxCell id="Vci0BR-BIrcoS8XzcBMn-55" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="408.49" y="228.81" width="62.02" height="40.44" as="geometry" />
         </mxCell>
-        <mxCell id="RBk_R1gjDbcSzaGuoD_O-158" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=0.5;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+        <mxCell id="RBk_R1gjDbcSzaGuoD_O-158" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=0.5;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="195" y="136" width="275" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Vci0BR-BIrcoS8XzcBMn-155" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.445;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.999;exitY=0.146;exitDx=0;exitDy=0;exitPerimeter=0;endSize=5;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="RBk_R1gjDbcSzaGuoD_O-99" target="RBk_R1gjDbcSzaGuoD_O-158">
