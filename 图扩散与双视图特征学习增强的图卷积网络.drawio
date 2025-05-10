@@ -545,7 +545,7 @@
           <mxGeometry x="274.98" y="288.25" width="201" height="10" as="geometry" />
         </mxCell>
         <mxCell id="Vci0BR-BIrcoS8XzcBMn-72" value="&lt;span&gt;&lt;font&gt;双视图特征学习&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=6;" vertex="1" parent="1">
-          <mxGeometry x="335.98" y="276.25" width="70" height="20" as="geometry" />
+          <mxGeometry x="341.98" y="276.25" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Vci0BR-BIrcoS8XzcBMn-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;endSize=5;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
